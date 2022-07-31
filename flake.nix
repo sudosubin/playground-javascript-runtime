@@ -19,6 +19,10 @@
               cargo
               python310
             ];
+
+            nativeBuildInputs = with pkgs; [
+              rustfmt
+            ];
           };
         }
       );
