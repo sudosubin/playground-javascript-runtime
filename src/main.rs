@@ -20,6 +20,7 @@ async fn run_js(file_path: &str) -> Result<(), AnyError> {
         extensions: vec![runtime_extension],
         ..Default::default()
     });
+
     js_runtime
         .execute_script(
             "[playground-javascript-runtime:console.js]",
